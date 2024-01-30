@@ -1,0 +1,62 @@
+float monsterX;
+float monsterY;
+float eyeR;
+float eyeG;
+float eyeB;
+
+
+void setup() {
+  size(500, 500);
+  monsterX= width/2;
+  monsterY=height+100;
+  smooth();
+}
+void draw() {
+  background(255);
+  ellipseMode(CENTER);
+  rectMode(CENTER);
+  stroke(0);
+  fill(255);
+  //BODY
+  ellipse(monsterX, monsterY, 300, 250);
+
+  //BODYFilling
+  fill(0);
+  ellipse(monsterX-28, monsterY, 29, 20);
+  ellipse(monsterX-85, monsterY+44, 20, 27);
+  ellipse(monsterX-45, monsterY-55, 25, 20);
+  ellipse(monsterX+50, monsterY-66, 30, 25);
+  ellipse(monsterX+93, monsterY+43, 24, 27);
+  //Legs+Feet
+  line(monsterX-75, monsterY+109, monsterX-141, monsterY+209);
+  line(monsterX-65, monsterY+113, monsterX-115, monsterY+209);
+  fill(0);
+  rect(monsterX-141, monsterY+209, 25, 10);
+  rect(monsterX-115, monsterY+215, 25, 10);
+
+  //Legs+feet right
+  line(monsterX+56, monsterY+115, monsterX+155, monsterY+205);
+  line(monsterX+50, monsterY+119, monsterX+115, monsterY+225);
+  rect(monsterX+115, monsterY+225, 25, 10);
+  rect(monsterX+155, monsterY+205, 25, 10);
+
+  //Eyes
+
+  fill(255);
+  eyeR = random(255);
+  eyeG = random(255);
+  eyeB = random(255);
+  fill(eyeR, eyeG, eyeB);
+  line(monsterX-175, monsterY-150, monsterX-50, monsterY-117);
+  line(monsterX+175, monsterY-150, monsterX+50, monsterY-117);
+  ellipse(monsterX-175, monsterY-150, 75, 35);
+  ellipse(monsterX+175, monsterY-150, 75, 35);
+  fill(0);
+  ellipse(monsterX+175, monsterY-150, 55, 20);
+  ellipse(monsterX-175, monsterY-150, 55, 20);
+
+  //function til flytning af monster
+
+  monsterY = monsterY - random(-1, 2);
+  monsterX = monsterX + random(-2, 2);
+}
