@@ -1,0 +1,72 @@
+
+//3.b
+String address;
+//3.c
+int a= 250+200;
+//3.d
+float b=576/28;
+//3.e
+String c="GG Try Again";
+
+//4.a+b+c+d
+void setup(){
+  address="Hello World";
+  println(" Adresse: "+address);
+  println(" Adresse: "+a);
+  println(" Adresse: "+b);
+  println(" Adresse: "+c);
+
+address="Goodbye World ";
+int a= 100;
+float b=3.14;
+String c="Git gud ";
+
+println(" Adresse: "+address);
+println(" Adresse: "+a);
+println(" Adresse: "+b);
+println(" Adresse: "+c);
+
+//4.e
+println(" Adresse: "+address);
+println(" Adresse: "+a);
+println(" Adresse: "+b);
+println(" Adresse: "+c);
+
+
+//4.f
+a++;
+b++;
+println(" Adresse: "+address);
+println(" Adresse: "+a++);
+println(" Adresse: "+b++);
+println(" Adresse: "+c);
+
+//4.g
+int a1=100;
+float b1=3.14;
+
+a1+=3;
+b1+=3;
+println(" Adresse: "+address);
+println(" Adresse: "+a1);
+println(" Adresse: "+b1);
+println(" Adresse: "+c);
+
+//4.h
+int a2=100;
+float b2=3.14;
+a2--;
+b2--;
+println(" Adresse: "+address);
+println(" Adresse: "+a2);
+println(" Adresse: "+b2);
+println(" Adresse: "+c);
+
+
+}
+
+
+
+
+
+
