@@ -1,0 +1,30 @@
+String teacherName= "Tess Løvgreen";
+int a=365;
+String by="København";'
+String landscape= "landscape1";
+boolean landscape1=true;
+float b=22.12;
+String intro= "Hej, jeg hedder ";
+boolean landscape2=false;
+float c= 2.2;
+int d=33;
+char g='S';
+
+//2
+println(a);
+//3
+println(by);
+//4
+println(landscape1);
+//5
+println("60*24");
+//6
+println(b);
+//7
+println(intro + teacherName);
+//8
+println(landscape2);
+//9
+println(c + d);
+//10
+println(g);
