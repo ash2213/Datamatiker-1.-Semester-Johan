@@ -6,9 +6,9 @@ int circleSize;
 int numberOfCircles;
 int x;
 int y;
-int rbgR;
-int rbgB;
-int rbgG;
+float rbgR;
+float rbgB;
+float rbgG;
 int counter;
 int rowCounter;
 
