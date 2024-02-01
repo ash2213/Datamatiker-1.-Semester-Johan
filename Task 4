@@ -27,6 +27,9 @@ println(" Adresse: "+b);
 println(" Adresse: "+c);
 
 //4.e
+a=a+10;
+b=b-1;
+c=c+"Now"; 
 println(" Adresse: "+address);
 println(" Adresse: "+a);
 println(" Adresse: "+b);
